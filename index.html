@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmp" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Poiret+One&family=Qwigley&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"> 
+            <title>Bomont CV 2021</title>
+</head>
+<body>
+        <div id="phrase">La beauté est dans les yeux de celui qui regarde.<br><span id="ow">Oscar Wilde</span></div>
+    <div id="grid1">
+            <div class="carre" id="carre_1" onclick='ecranXtof()'></div>
+            <div class="carre" id="carre_5" onclick='ecranCompetences()'></div>
+            <div class="carre" id="carre_3" onclick='ecranExperience()'></div>
+            <div class="carre" id="carre_2" onclick='ecranFormation()'></div>
+            <div class="carre" id="carre_4" onclick='ecranLoisirs()'></div>
+            <div class="carre" id="carre_6" onclick='ecranCoordonnees()'></div>
+    </div>
+    <!-- Fenêtre Xtof Février 2021 -->
+    <div id="ecranXtof" onclick='ecranXtof()'>
+        <div class="fenetres" id="fenetreXtof">
+            <div id="icnXtof"><img src="Assets/img/icnXtof.svg" alt="Christophe Bomont"></div>
+            <div id="titreBoiteX">Christophe Bomont</div>
+            <div id="textBoiteX">
+                <p>Concepteur graphique et web designer de formation, je suis créateur et exploitant de la société DUO depuis treize ans.</p>
+                <p>DUO possède un portefeuille de clients dans le secteur de l’hôtellerie-restauration 3, 4 et 5 étoiles.</p>
+                <p> J’ai aujourd’hui pour objectif de mettre l’ensemble de mes atouts au service de nouveaux projets.</p>
+                <a href="http://cb.amv.manusien-ecolelamanu.fr/?page_id=212" target="_blank"><div class="ligneBoiteX"><span class="portfolio"><img class="icn" src="Assets/img/icnPortfolio.svg" alt="Image portfolio"> Allez voir mon portfolio !</span></div></a>
+            </div>
+        </div>
+    </div>    <!-- Fenêtre contact / coordonnées -->
+    <div id="ecranCoordonnees" onclick='ecranCoordonnees()'>
+        <div class="fenetres" id="fenetreCoordonnees">
+            <div class="titreBoite"><img class="icn" src="Assets/img/icnContact.svg" alt="Boîte contact">Coordonnées</div>
+            <div class="ligneBoite"><img class="icn" src="Assets/img/icnTel.svg" alt="Téléphone"> +33 6 78 40 56 20</div>
+            <a href="mailto:c.bomont@icloud.com"><div class="ligneBoite"><img class="icn" src="Assets/img/icn@.svg" alt="mail"> c.bomont@icloud.com</div></a>
+            <div class="ligneBoite"><img class="icn" src="Assets/img/icnCar.svg" alt="mail">&nbsp&nbspPermis B</div>
+            <a href="http://cb.amv.manusien-ecolelamanu.fr/?page_id=212" target="_blank"><div class="ligneBoite"><span class="portfolio"><img class="icn" src="Assets/img/icnPortfolio.svg" alt="Image portfolio"> Voir mon portfolio</span></div></a>
+        </div>
+    </div>
+    <!-- Fenêtre formation -->
+    <div id="ecranFormation" onclick='ecranFormation()'>
+        <div class="fenetres" id="fenetreFormation">
+            <div class="titreBoite"><img class="icn" src="Assets/img/icnFormation.svg" alt="Boîte formation"> Formation</div>
+            <div class="ligneBoite"><img class="icn" src="Assets/img/icnPortable.svg" alt="Ordi portable">WD&CD</div>
+            <div class="textBoite">Titre Professionnel Designer Web</div>
+            <div class="expBoite">La Manu, Amiens</div>
+            <div class="ligneBoite"><img class="icn" src="Assets/img/icnCrayon.svg" alt="Crayon">C.E.A.P.</div>
+            <div class="textBoite">Certificat d'Étude d'Arts Plastiques</div>
+            <div class="expBoite">École de l'Image, Épinal</div><br>
+            <div class="ligneBoite">Baccalauréat B</div>
+            <div class="expBoite">Épinal</div><br>
+            <div class="ligneBoite"> </div>
+            <div class="ligneBoite">BAFA</div>
+            <div class="expBoite">U.F.C.V.</div>
+            <div class="ligneBoiteFormation"> </div>
+
+        </div>
+    </div>
+    <!-- Fenêtre compétences -->
+    <div id="ecranCompetences" onclick='ecranCompetences()'>
+        <div class="fenetres" id="fenetreCompetences">
+            <div class="titreBoite"><img class="icn" src="Assets/img/icnCompetences.svg" alt="Boîte compétences">Compétences</div>
+            <div class="ligneBoite"><img class="icn2" src="Assets/img/icnSouris.svg" alt="Informatique">INFORMATIQUE</div>
+            <div id="fenetreInformatique">
+                <div id="col1">
+                    <div class="ligneBoiteInfo"><img class="icn2" src="Assets/img/LogoAdobe.png" alt="Adobe"> Adobe CS</div><br>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoInDesign.png" alt="In Design"><sup>In Design</sup></div>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoIllustrator.png" alt="Illustrator"> <sup>Illustrator</sup></div>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoPhotoshop.png" alt="Photoshop"> <sup>Photoshop</sup></div>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoPremiere.png" alt="Première Pro"> <sup>Première Pro</sup></div>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoAfterEffects.png" alt="After Effects"> <sup>After Effects</sup></div>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoAnimate.png" alt="Animate"> <sup>Animate</sup></div>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoXD.png" alt="XD"> <sup>XD</sup></div>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoAcrobat.png" alt="Acrobat Pro"> <sup>Acrobat Pro</sup></div>
+                </div>
+                <div id="col2">
+                    <div class="ligneBoiteInfo"><img class="icn4" src="Assets/img/LogoOffice.png" alt="Microsoft Office"></div><br>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoWord.png" alt="Word"> <sup>Word</sup></div>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoExcel.png" alt="Excel"> <sup>Excel</sup></div>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoPowerPoint.png" alt="PowerPoint"> <sup>PowerPoint</sup></div>
+                    <div class="ligneBoiteInfo">Musique MIDI</div>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoStudioOne.png" alt="Studio One"> <sup>Studio One</sup></div>
+                    <div class="ligneBoiteInfo">Codage</div>
+                    <div class="textBoiteSupInfo"><img class="icn3" src="Assets/img/LogoVSCode.png" alt="Studio One"> <sup>Visual Studio Code</sup></div>
+                </div>
+                <div class="macWin"> <img src="Assets/img/LogoMacWin.svg" alt="Mac & Windows"> </div>
+                </div>
+            <div class="ligneBoite">Gestion de projets</div>
+            <div class="expBoite">
+                Management<br>
+                Maîtrise d’œuvre & fabrication<br>
+            </div>
+            <div class="ligneBoite">Création graphique</div>
+            <div class="expBoite">
+                Illustration, design<br>
+                Logo & charte graphique<br>
+                Retouche photo<br>
+                Design de PLV<br>
+                Conception de produits sur mesure<br>
+            </div>
+            <div class="textBoite">Édition</div>
+            <div class="expBoite">
+                Mise en page<br>
+                Rédactionnel<br>
+            </div>
+                <div class="textBoite">Aménagement d’espaces</div>
+                <div class="expBoite">
+                Conception de stands d’exposition<br>
+                Décoration & aménagement intérieurs<br>
+            </div>
+            <div class="ligneBoite">Web design</div>
+            <div class="expBoite">Design de sites web <br>
+                                Communication numérique </div>
+            <div class="ligneBoite">Langues <img class="icn2" src="Assets/img/icnLangues.svg" alt="Langues"></div>
+            <div class="expBoite">
+                Français (natif)<br>
+                Anglais (B2)<br>
+            </div>
+            <a href="http://cb.amv.manusien-ecolelamanu.fr/?page_id=212" target="_blank"><div class="ligneBoite"><span class="portfolio"><img class="icn" src="Assets/img/icnPortfolio.svg" alt="Image portfolio"> Allez voir mon portfolio !</span></div></a>
+        </div>
+
+    </div>
+    <!-- Fenêtre expérience professionnelle-->
+    <div id="ecranExperience" onclick='ecranExperience()'>
+        <div class="fenetres" id="fenetreExperience">
+            <!-- Expériences -->
+            <div class="titreBoite"><img class="icn" src="Assets/img/icnExperience.svg" alt="Boîte expérience"> Experience</div>
+            <div class="ligneBoite">Gérant chez DUO</div>
+            <div class="textBoite">Depuis 2007 ; mon poste actuel</div>
+            <div class="expBoite">
+                Création de la société <br>
+                Développement commercial <br>
+                Fonctionnement général</div>
+            <div class="ligneBoite">Chef de studio <br> chez Graphimage</div>
+            <div class="textBoite">Associé dans la sàrl Tanagra</div>
+            <div class="expBoite">
+                Conception et création de campagnes <br> de communication<br>
+                Encadrement de l’équipe de graphistes <br>
+                Formation aux logiciels de PAO Adobe <br> et à la mise en page <br>
+                Recherche et développement produits</div>
+            <div class="ligneBoite"><span class="spanIta">Rachat de la société Graphimage <br>par la sàrl Tanagra</span></div>
+            <div class="ligneBoite">Dessinateur complet, inforgraphiste</div>
+            <div class="expBoite">
+                Graphisme & production numériques<br>
+                Analyse & développement de l’outil <br>de travail informatique
+            </div>
+            <a href="http://cb.amv.manusien-ecolelamanu.fr/?page_id=212" target="_blank"><div class="ligneBoite"><span class="portfolio"><img class="icn" src="Assets/img/icnPortfolio.svg" alt="Image portfolio"> Allez voir mon portfolio !</span></div></a>
+        </div>
+    </div>
+    <!-- Fenêtre loisirs -->
+    <div id="ecranLoisirs" onclick='ecranLoisirs()'>
+        <div class="fenetres" id="fenetreLoisirs">
+            <div class="titreBoite">Loisirs<img class="icn4" src="Assets/img/icnLoisirs.svg" alt="Boîte loisirs"></div>
+            <div class="ligneBoite">Musique</div>
+            <div class="expBoite">Guitare</div>
+            <div class="expBoite">Composition</div>
+            <div class="expBoite">Musique MIDI</div>
+            <div class="expBoite">Saxophone</div>
+            <div class="expBoite">Piano</div>
+            <div class="ligneBoite">Art & déco</div>
+            <div class="expBoite">Peinture</div>
+            <div class="expBoite">Dessin</div>
+            <div class="expBoite">Décoration</div>
+            <div class="expBoite">Bricolage créatif</div>
+            <div class="expBoite"></div>
+            <div class="ligneBoite">Culture</div>
+            <div class="expBoite">Musée</div>
+            <div class="expBoite">Expos</div>
+            <div class="expBoite">Voyages</div>
+            <div class="ligneBoite">Au grand air…!</div>
+            <div class="expBoite">Vélo</div>
+            <div class="expBoite">Nature</div>
+            <div class="expBoite">Marche</div>
+        </div>
+    </div>
+
+    </div>
+<script type="text/javascript" src="Assets/js/script.js"></script>
+</body>
+</html>
+
+<!-- <div class="close"><a href='#'><img class="icn" src="Assets/img/icnClose.svg" alt="Fermeture loisirs"></a></div> -->

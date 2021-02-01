@@ -1,0 +1,354 @@
+*, ::before, ::after
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-repeat: no-repeat;
+    background-image: url("../img/fond_gris.jpg");
+}
+#phrase
+{
+    width: 80%;
+    font-family: 'Poiret One', cursive;
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 85%;
+    height: 5rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    color: white;
+}
+#ow
+{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+#grid1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    max-width: 1000px;
+    height: 80vh;
+    gap: 5px; 
+}
+#carre_1-1
+{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url("../img/carreCV.png");
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+#carre_1-1:hover
+{
+    background-image: url("../img/carreCV2.png");
+}
+#carre_1-2
+{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url("../img/competences.png");
+    background-color: #fff;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#carre_1-2:hover
+{
+    background-image: url("../img/competences2.png");
+}
+#carre_1-3
+{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url("../img/experience.png");
+    background-size: contain;
+    background-position-x: left;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+#carre_1-3:hover
+{
+    background-image: url("../img/Experience2.png");
+}
+#carre_2-1
+{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url("../img/formation.png");
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+#carre_2-1:hover
+{
+    background-image: url("../img/formation2.png");
+}
+#coordonnees
+{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgb(255, 255, 255);
+}
+#carre_2-2
+{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url("../img/creations.png");
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+#carre_2-2:hover
+{
+    background-image: url("../img/creations2.png");
+}
+#carre_2-3
+{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-image: url("../img/contact.png");
+    background-size: contain;
+    background-position-x: left;
+    background-position-y: top;
+    background-repeat: no-repeat}
+#carre_2-3:hover
+{
+    background-image: url("../img/contact2.png");
+}
+.fenetres
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: fit-content;
+    padding: 30px;
+    z-index: 1000;
+}
+/* Écran & fenêtre compétences */
+#ecranCompetences
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    opacity: 0.85;
+}
+#fenetreCompetences
+{
+    background-image: url(../img/fond-Competences.png);
+    background-color: rgb(114, 61, 61);
+}
+/* Écran & fenêtre contact-coordonnees */
+#ecranCoordonnees
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    opacity: 0.85;
+}
+#fenetreCoordonnees
+{
+    background-image: url(../img/fond-contact.png);
+    background-color: rgb(114, 61, 61);
+}
+/* Écran & fenêtre formation */
+#ecranFormation
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    opacity: 0.85;
+}
+#fenetreFormation
+{
+
+    background-image: url(../img/fond-formation.png);
+    background-color: rgb(114, 61, 61);
+}
+/* Écran & fenêtre expérience */
+#ecranExperience
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    opacity: 0.85;
+}
+#fenetreExperience
+{
+    background-image: url(../img/fond-Experience.png);
+    background-color: rgb(114, 61, 61);
+}
+/* Écran & fenêtre loisirs */
+#ecranLoisirs
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    opacity: 0.85;
+}
+#fenetreLoisirs
+{
+    background-image: url(../img/fond-loisirs.png);
+    background-color: rgb(114, 61, 61);
+}
+#fenetreInformatique
+{
+    display: none;
+    width: 400px;
+    height: fit-content;
+
+}
+/* Feuilles de style des textes des boîtes */
+.titreBoite
+{
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-size: 2.5rem;
+    width: 100%;
+}
+.ligneBoite
+{
+    width: 85%;
+    margin: 30px 0px 0px 45px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    color: white;
+    font-family: 'Lato';
+}
+.ligneBoiteFormation
+{
+    width: 85%;
+    margin: 10px 0px 0px 45px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    color: white;
+    font-family: 'Lato';
+}
+.textBoite
+{
+    font-family: 'Lato';
+    margin: 0px 0px 0px 45px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: white;
+}
+.textBoiteSup
+{
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 300;
+    margin: 0px 0px 0px 55px;
+    width: 85%;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+    color: white;
+}.expBoite
+{
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 300;
+    margin: 0px 0px 0px 55px;
+    width: 85%;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    color: white;
+}
+.spanIta
+{
+    font-style: italic;
+}
+.close
+{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+}
+.icn
+{
+    width: 3rem;
+    height: 3rem;
+}
+.icn2
+{
+    width: 2rem;
+    height: 2rem;
+}
+.icn3
+{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+a
+{
+    text-decoration: none;
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width : 740px)
+{
+    #phrase
+    {
+    font-size: 1.6rem;
+    /* padding: 1rem; */
+    }
+}
+/* @media screen and (max-width : 400px)
+{
+    #phrase
+    {
+    font-size: 1.5rem; */
+    /* padding: 1rem; */
+    }
+}
