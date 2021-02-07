@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmp" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
@@ -14,14 +13,16 @@
             <title>Bomont CV 2021</title>
 </head>
 <body>
-        <div id="phrase">La beauté est dans les yeux de celui qui regarde.<br><span id="ow">Oscar Wilde</span></div>
-    <div id="grid1">
-            <div class="carre" id="carre_1" onclick='ecranXtof()'></div>
-            <div class="carre" id="carre_5" onclick='ecranCompetences()'></div>
-            <div class="carre" id="carre_3" onclick='ecranExperience()'></div>
-            <div class="carre" id="carre_2" onclick='ecranFormation()'></div>
-            <div class="carre" id="carre_4" onclick='ecranLoisirs()'></div>
-            <div class="carre" id="carre_6" onclick='ecranCoordonnees()'></div>
+    <div class="container">
+    <div id="phrase">La beauté est dans les yeux de celui qui regarde.<br><span id="ow">Oscar Wilde</span></div>
+        <div id="grid1">
+                <div class="carre" id="carre_1" onclick='ecranXtof()'></div>
+                <div class="carre" id="carre_5" onclick='ecranCompetences()'></div>
+                <div class="carre" id="carre_3" onclick='ecranExperience()'></div>
+                <div class="carre" id="carre_2" onclick='ecranFormation()'></div>
+                <div class="carre" id="carre_4" onclick='ecranLoisirs()'></div>
+                <div class="carre" id="carre_6" onclick='ecranCoordonnees()'></div>
+        </div>
     </div>
     <!-- Fenêtre Xtof Février 2021 -->
     <div id="ecranXtof" onclick='ecranXtof()'>
@@ -42,7 +43,7 @@
             <div class="ligneBoite"><img class="icn" src="Assets/img/icnTel.svg" alt="Téléphone"> +33 6 78 40 56 20</div>
             <a href="mailto:c.bomont@icloud.com"><div class="ligneBoite"><img class="icn" src="Assets/img/icn@.svg" alt="mail"> c.bomont@icloud.com</div></a>
             <div class="ligneBoite"><img class="icn" src="Assets/img/icnCar.svg" alt="mail">&nbsp&nbspPermis B</div>
-            <a href="http://cb.amv.manusien-ecolelamanu.fr/?page_id=212" target="_blank"><div class="ligneBoite"><span class="portfolio"><img class="icn" src="Assets/img/icnPortfolio.svg" alt="Image portfolio"> Voir mon portfolio</span></div></a>
+            <a href="http://cb.amv.manusien-ecolelamanu.fr/?page_id=212" target="_blank"><div class="ligneBoite"><span class="portfolio"><img class="icn" src="Assets/img/icnPortfolio.svg" alt="Image portfolio"> Allez voir mon portfolio !</span></div></a>
         </div>
     </div>
     <!-- Fenêtre formation -->
@@ -69,6 +70,7 @@
         <div class="fenetres" id="fenetreCompetences">
             <div class="titreBoite"><img class="icn" src="Assets/img/icnCompetences.svg" alt="Boîte compétences">Compétences</div>
             <div class="ligneBoite"><img class="icn2" src="Assets/img/icnSouris.svg" alt="Informatique">INFORMATIQUE</div>
+            <!-- fenêtre informatique -->
             <div id="fenetreInformatique">
                 <div id="col1">
                     <div class="ligneBoiteInfo"><img class="icn2" src="Assets/img/LogoAdobe.png" alt="Adobe"> Adobe CS</div><br>
@@ -126,7 +128,6 @@
             </div>
             <a href="http://cb.amv.manusien-ecolelamanu.fr/?page_id=212" target="_blank"><div class="ligneBoite"><span class="portfolio"><img class="icn" src="Assets/img/icnPortfolio.svg" alt="Image portfolio"> Allez voir mon portfolio !</span></div></a>
         </div>
-
     </div>
     <!-- Fenêtre expérience professionnelle-->
     <div id="ecranExperience" onclick='ecranExperience()'>

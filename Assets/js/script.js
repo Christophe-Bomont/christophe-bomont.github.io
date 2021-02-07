@@ -1,7 +1,7 @@
-// Informatique
+// Xtof
 var xtof = getElementById('ecranXtof')
 function ecranXtof() {
-    xtof = document.getElementById("ecranXtof");
+    xtof = document.getElementById('ecranXtof');
     xtof.style.visibility = (xtof.style.visibility == "visible") ? "hidden" : "visible";
     }
 // Coordonnées
@@ -31,7 +31,7 @@ function ecranXtof() {
 // Competences
     var competences = getElementById('ecranCompetences')
     function ecranCompetences() {
-    competences = document.getElementById("ecranCompetences");
+    competences = document.getElementById('ecranCompetences');
     competences.style.visibility = (competences.style.visibility == "visible") ? "hidden" : "visible";
     }
 // Informatique

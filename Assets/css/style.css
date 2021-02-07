@@ -9,18 +9,29 @@ body
     background-repeat: no-repeat;
     background-image: url("../img/fond_gris.jpg");
 }
+.container
+{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    max-width: 1000px;
+    height: fit-content;
+    min-height: 500px;
+}
 #phrase
 {
+    /* position: absolute; */
+    /* margin-left: 30%; */
     font-family: 'Poiret One', cursive;
     font-size: 1.7rem;
     line-height: 2rem;
-    width: 70%;
-    max-width: 900px;
-    /* vertical-align: bottom; */
+    /* width: 80%; */
+    max-width: 940px;
+    z-index: 500;
     margin: auto;
-    margin-top: 2rem;
-
-
+    /* margin-top: 2rem; */
     color: white;
 }
 #ow
@@ -30,18 +41,14 @@ body
 }
 #grid1
 {
-    position: absolute;
-    margin-top: 30%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 1000px;
-    height: fit-content;
-    min-height: 500px;
     display: grid;
     grid-template-columns: 1fr repeat(3);
     grid-template-rows: 1fr repeat(2);
     /* background-color: cornflowerblue; */
+    width: 80%;
+    max-width: 1000px;
+    height: fit-content;
+    min-height: 500px;
 }
 .carre
 {
@@ -105,14 +112,14 @@ body
 {
     grid-column: 2/3;
     grid-row: 1/2;
-    background-image: url(../img/Competences.png);
+    background-image: url(../img/competences.png);
     background-position-x: center;
     background-position-y: bottom;
 }
 #carre_5:hover
 {
     transition: 0.2s;
-    background-image: url(../img/Competences2.png);
+    background-image: url(../img/competences2.png);
 }
 #carre_6 /* Contact */
 {
@@ -149,7 +156,7 @@ body
     transform: translate(-50%, -50%);
     visibility: hidden;
     width: 100vw;
-    height: 100%;
+    height: 200%;
     background-color: black;
     opacity: 0.85;
 }
@@ -163,15 +170,12 @@ body
 }
 #ecranCompetences
 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     visibility: hidden;
     width: 100vw;
-    height: 100%;
+    height: 200vh;
     background-color: black;
     opacity: 0.85;
+    z-index: 900;
 }
 #fenetreCompetences
 {
@@ -180,7 +184,9 @@ body
     border-style: solid;
     border-color:  rgb(125, 102, 46);
     border-width: 1px;
-    z-index: 500;
+    z-index: 1000;
+    max-height: 90vh;
+    overflow-y: scroll;
 }
 #ecranCoordonnees
 {
@@ -190,13 +196,12 @@ body
     transform: translate(-50%, -50%);
     visibility: hidden;
     width: 100vw;
-    height: 100%;
+    height: 200%;
     background-color: black;
     opacity: 0.85;
 }
 #fenetreCoordonnees
 {
-    /* background-image: url(../img/fond-contact.png); */
     background-color: rgb(43, 8, 15);
     opacity: 0.95;
     border-style: solid;
@@ -212,7 +217,7 @@ body
     transform: translate(-50%, -50%);
     visibility: hidden;
     width: 100vw;
-    height: 100%;
+    height: 200%;
     background-color: black;
     opacity: 0.85;
 }
@@ -234,7 +239,7 @@ body
     transform: translate(-50%, -50%);
     visibility: hidden;
     width: 100vw;
-    height: 100%;
+    height: 200%;
     background-color: black;
     opacity: 0.85;
 }
@@ -255,7 +260,7 @@ body
     transform: translate(-50%, -50%);
     visibility: hidden;
     width: 100vw;
-    height: 100%;
+    height: 200%;
     background-color: black;
     opacity: 0.85;
 }
@@ -488,7 +493,9 @@ a
     {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin-top: 50%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
     /* background-color: blue; */
     }
     #carre_2
