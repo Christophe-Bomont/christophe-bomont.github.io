@@ -185,7 +185,7 @@ body
 #ecranCoordonnees
 {
 
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     visibility: hidden;
 }
 #fenetreCoordonnees
