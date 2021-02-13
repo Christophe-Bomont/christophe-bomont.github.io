@@ -28,7 +28,7 @@ body
     font-size: 1.7rem;
     line-height: 2rem;
     /* width: 80%; */
-    max-width: 940px;
+    max-width: 800px;
     z-index: 500;
     margin: auto;
     /* margin-top: 2rem; */
@@ -42,10 +42,11 @@ body
 #grid1
 {
     display: grid;
+    margin: auto;
     grid-template-columns: 1fr repeat(3);
     grid-template-rows: 1fr repeat(2);
     /* background-color: cornflowerblue; */
-    width: 80%;
+    width: 100%;
     max-width: 1000px;
     height: fit-content;
     min-height: 500px;
@@ -482,20 +483,3 @@ a
     }
 }
 
-/* #ecranCompetences
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    visibility: hidden;
-    width: 100vw;
-    height: 100%;
-    background-color: black;
-    opacity: 0.85;
-}
-#fenetreCompetences
-{
-    background-image: url(../img/fond-Competences.png);
-    background-color: rgb(114, 61, 61);
-} */
